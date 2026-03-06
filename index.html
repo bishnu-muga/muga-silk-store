@@ -12,18 +12,24 @@
 body{
 margin:0;
 font-family:Arial;
-background:#f2f2f2;
+background:#f6f3ed;
 }
 
-/* header */
+/* HEADER */
 
 .header{
-background:black;
-color:#d4af37;
+background:#fff;
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:12px;
+padding:12px 15px;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.menu{
+font-size:26px;
+cursor:pointer;
+color:#b38b2d;
 }
 
 .brand{
@@ -31,70 +37,67 @@ display:flex;
 align-items:center;
 font-size:22px;
 font-weight:bold;
+color:#b38b2d;
 }
 
 .brand img{
-height:45px;
+height:42px;
 margin-right:8px;
-}
-
-.menu{
-font-size:26px;
-cursor:pointer;
 }
 
 .cart{
 font-size:22px;
 }
 
-/* search */
+/* SEARCH */
 
 .search{
 padding:12px;
-background:#eee;
 }
 
 .search input{
 width:100%;
-padding:10px;
+padding:12px;
 font-size:16px;
-border-radius:6px;
-border:none;
+border-radius:8px;
+border:1px solid #ddd;
 }
 
-/* product grid */
+/* PRODUCTS */
 
 .products{
 display:grid;
 grid-template-columns:1fr 1fr;
-gap:12px;
-padding:12px;
+gap:15px;
+padding:15px;
 }
 
 .card{
 background:white;
-border-radius:10px;
-box-shadow:0 3px 10px rgba(0,0,0,0.1);
+border-radius:12px;
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
 text-align:center;
 padding:10px;
 }
 
 .card img{
 width:100%;
-border-radius:8px;
+border-radius:10px;
 }
 
 .card h3{
-font-size:18px;
 margin:10px 0;
+font-size:18px;
 }
 
 .view{
 background:#c79a1b;
 border:none;
 color:white;
-padding:8px 16px;
+padding:8px 18px;
 border-radius:6px;
+font-size:14px;
+cursor:pointer;
 }
 
 </style>
@@ -103,44 +106,80 @@ border-radius:6px;
 
 <body>
 
+<!-- HEADER -->
+
 <div class="header">
 
 <div class="menu">☰</div>
 
 <div class="brand">
+
 <img src="logo.png">
+
 Assam Muga Silk
+
 </div>
 
 <div class="cart">🛒</div>
 
 </div>
 
+<!-- SEARCH -->
+
 <div class="search">
+
 <input type="text" placeholder="Search silk products">
+
 </div>
+
+<!-- PRODUCTS -->
 
 <div class="products">
 
 <div class="card">
+
 <img src="eri1.jpg">
+
 <h3>Muga Silk Saree</h3>
-<a href="muga.html"><button class="view">View</button></a>
+
+<a href="muga.html">
+
+<button class="view">View</button>
+
+</a>
+
 </div>
 
 <div class="card">
-<img src="eri2.jpg">
+
+<img src="eri1.jpg">
+
 <h3>Muga Silk Gamusa</h3>
-<a href="gamusa.html"><button class="view">View</button></a>
+
+<a href="gamusa.html">
+
+<button class="view">View</button>
+
+</a>
+
 </div>
 
 <div class="card">
-<img src="eri3.jpg">
+
+<img src="eri1.jpg">
+
 <h3>Eri Silk Shawl</h3>
-<a href="eri.html"><button class="view">View</button></a>
+
+<a href="eri.html">
+
+<button class="view">View</button>
+
+</a>
+
 </div>
 
 </div>
 
 </body>
+
 </html>
