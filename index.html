@@ -3,249 +3,113 @@
 <head>
 
 <title>Assam Muga Silk</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
 body{
 margin:0;
 font-family:Arial;
-background:#f8f6f0;
+background:#faf7ef;
 }
 
-/* NAVBAR */
-
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px;
-background:white;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
-
-.logo{
-font-size:20px;
-font-weight:bold;
-color:#b8860b;
-}
-
-.menu-icon{
-font-size:26px;
-cursor:pointer;
-}
-
-.icons{
-font-size:22px;
-}
-
-.icons span{
-margin-left:15px;
-cursor:pointer;
-}
-
-/* SIDE MENU */
-
-.sidemenu{
-height:100%;
-width:0;
-position:fixed;
-top:0;
-left:0;
+header{
 background:black;
-overflow-x:hidden;
-transition:0.3s;
-padding-top:60px;
-}
-
-.sidemenu a{
-padding:10px 20px;
-text-decoration:none;
-font-size:20px;
-color:white;
-display:block;
-}
-
-.sidemenu a:hover{
-background:#b8860b;
-}
-
-/* HERO */
-
-.hero{
+color:#d4af37;
 text-align:center;
-padding:50px 20px;
-background:#111;
-color:white;
+padding:30px;
 }
 
-.hero img{
-width:150px;
-}
-
-/* PRODUCTS */
-
-.products{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
+.categories{
+display:grid;
+grid-template-columns:repeat(2,1fr);
 gap:20px;
-padding:40px;
-}
-
-.product{
-background:white;
 padding:20px;
-width:260px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-text-align:center;
 }
 
-.product img{
+.card{
+background:white;
+padding:10px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
 width:100%;
-border-radius:8px;
+border-radius:10px;
 }
 
 button{
 background:#b8860b;
-border:none;
 color:white;
-padding:10px 20px;
+border:none;
+padding:10px;
+width:100%;
 border-radius:5px;
-cursor:pointer;
+margin-top:10px;
 }
 
-/* WHATSAPP */
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px;
-border-radius:50px;
+a{
 text-decoration:none;
-font-weight:bold;
 }
 
 </style>
 
-<script>
-
-function openMenu(){
-document.getElementById("menu").style.width="250px";
-}
-
-function closeMenu(){
-document.getElementById("menu").style.width="0";
-}
-
-</script>
-
 </head>
-
 
 <body>
 
+<header>
 
-<div class="navbar">
+<h1>Assam Muga Silk</h1>
 
-<span class="menu-icon" onclick="openMenu()">☰</span>
+</header>
 
-<div class="logo">Assam Muga Silk</div>
+<div class="categories">
 
-<div class="icons">
-<span>🔍</span>
-<span>🛒</span>
-</div>
+<a href="muga.html">
 
-</div>
+<div class="card">
 
-
-
-<div id="menu" class="sidemenu">
-
-<a href="javascript:void(0)" onclick="closeMenu()">✖ Close</a>
-<a href="#">Home</a>
-<a href="#">Products</a>
-<a href="#">Gallery</a>
-<a href="#">Contact</a>
-
-</div>
-
-
-
-<div class="hero">
-
-<img src="logo.png">
-
-<h1>Authentic Assam Muga Silk</h1>
-
-<p>Premium Handmade Silk from Assam</p>
-
-</div>
-
-
-
-<div class="products">
-
-<div class="product">
+<img src="eri1.jpg">
 
 <h3>Muga Silk Saree</h3>
 
-<p>Photo coming soon</p>
-
-<p>Price ₹8000</p>
-
-<button>Order on WhatsApp</button>
+<button>View</button>
 
 </div>
-
-
-
-<div class="product">
-
-<h3>Muga Silk Gamusa</h3>
-
-<p>Photo coming soon</p>
-
-<p>Price ₹1500</p>
-
-<button>Order on WhatsApp</button>
-
-</div>
-
-
-
-<div class="product">
-
-<h3>Eri Silk Shawl</h3>
-
-<img src="eri1.jpg">
-<img src="eri2.jpg">
-<img src="eri3.jpg">
-
-<p>Price ₹2500</p>
-
-<button>Order on WhatsApp</button>
-
-</div>
-
-</div>
-
-
-
-<a class="whatsapp" href="https://wa.me/916001636508">
-
-WhatsApp
 
 </a>
 
+<a href="gamusa.html">
 
+<div class="card">
+
+<img src="eri2.jpg">
+
+<h3>Muga Silk Gamusa</h3>
+
+<button>View</button>
+
+</div>
+
+</a>
+
+<a href="eri.html">
+
+<div class="card">
+
+<img src="eri3.jpg">
+
+<h3>Eri Silk Shawl</h3>
+
+<button>View</button>
+
+</div>
+
+</a>
+
+</div>
 
 </body>
 </html>
-
-  
