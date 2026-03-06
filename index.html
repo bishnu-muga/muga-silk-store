@@ -12,7 +12,7 @@
 body{
 margin:0;
 font-family:Arial;
-background:#f7f4ef;
+background:#f6f3ed;
 }
 
 /* HEADER */
@@ -23,13 +23,13 @@ display:flex;
 align-items:center;
 justify-content:space-between;
 padding:12px;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
 .menu{
 font-size:26px;
 cursor:pointer;
-color:#c79a1b;
+color:#b38b2d;
 }
 
 .brand{
@@ -37,16 +37,12 @@ display:flex;
 align-items:center;
 font-size:22px;
 font-weight:bold;
-color:#c79a1b;
+color:#b38b2d;
 }
 
 .brand img{
-height:50px;
+height:45px;
 margin-right:8px;
-}
-
-.cart{
-font-size:22px;
 }
 
 /* SEARCH */
@@ -58,7 +54,6 @@ padding:12px;
 .search input{
 width:100%;
 padding:12px;
-font-size:16px;
 border-radius:8px;
 border:1px solid #ddd;
 }
@@ -96,11 +91,36 @@ border:none;
 padding:10px 20px;
 border-radius:6px;
 cursor:pointer;
-font-size:14px;
 }
 
-.view:hover{
-background:#b38712;
+/* ERI PRODUCT */
+
+.product{
+padding:20px;
+text-align:center;
+}
+
+.product img{
+width:90%;
+max-width:400px;
+border-radius:12px;
+}
+
+.price{
+font-size:22px;
+color:#b38b2d;
+margin-top:10px;
+}
+
+.order{
+background:#25D366;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:8px;
+font-size:16px;
+margin-top:10px;
+cursor:pointer;
 }
 
 /* MENU */
@@ -125,10 +145,6 @@ color:#333;
 border-bottom:1px solid #eee;
 }
 
-.sidebar a:hover{
-background:#f2f2f2;
-}
-
 </style>
 
 </head>
@@ -139,10 +155,9 @@ background:#f2f2f2;
 
 <div class="sidebar" id="menu">
 
-<a href="index.html">Home</a>
-<a href="muga.html">Muga Saree</a>
-<a href="gamusa.html">Muga Gamusa</a>
-<a href="eri.html">Eri Shawl</a>
+<a href="#home">Home</a>
+<a href="#eri">Eri Silk Shawl</a>
+<a href="#contact">Contact</a>
 
 </div>
 
@@ -160,8 +175,6 @@ Assam Muga Silk
 
 </div>
 
-<div class="cart">🛒</div>
-
 </div>
 
 <!-- SEARCH -->
@@ -172,35 +185,29 @@ Assam Muga Silk
 
 </div>
 
-<!-- PRODUCTS -->
+<!-- HOME -->
+
+<section id="home">
 
 <div class="products">
 
 <div class="card">
 
-<img src="eri1.jpg">
+<div style="height:200px;background:#eee;border-radius:10px"></div>
 
 <h3>Muga Silk Saree</h3>
 
-<a href="muga.html">
-
-<button class="view">View</button>
-
-</a>
+<p>Coming Soon</p>
 
 </div>
 
 <div class="card">
 
-<img src="eri1.jpg">
+<div style="height:200px;background:#eee;border-radius:10px"></div>
 
 <h3>Muga Silk Gamusa</h3>
 
-<a href="gamusa.html">
-
-<button class="view">View</button>
-
-</a>
+<p>Coming Soon</p>
 
 </div>
 
@@ -210,7 +217,7 @@ Assam Muga Silk
 
 <h3>Eri Silk Shawl</h3>
 
-<a href="eri.html">
+<a href="#eri">
 
 <button class="view">View</button>
 
@@ -219,6 +226,32 @@ Assam Muga Silk
 </div>
 
 </div>
+
+</section>
+
+<!-- ERI PRODUCT -->
+
+<section id="eri">
+
+<div class="product">
+
+<img src="eri1.jpg">
+
+<h2>Eri Silk Shawl</h2>
+
+<div class="price">₹2500</div>
+
+<p>Original handmade Eri Silk Shawl from Assam.</p>
+
+<a href="https://wa.me/916001636508">
+
+<button class="order">Order on WhatsApp</button>
+
+</a>
+
+</div>
+
+</section>
 
 <script>
 
@@ -229,4 +262,5 @@ document.getElementById("menu").style.left="0";
 </script>
 
 </body>
-</html>
+
+  </html>
