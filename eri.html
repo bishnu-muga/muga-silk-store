@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 <title>Eri Silk Shawl</title>
@@ -9,14 +10,15 @@
 body{
 font-family:Arial;
 margin:0;
-background:#faf7ef;
+background:#f4f4f4;
 }
 
-header{
+.header{
 background:black;
-color:white;
+color:#d4af37;
 text-align:center;
-padding:20px;
+padding:15px;
+font-size:20px;
 }
 
 .products{
@@ -26,21 +28,17 @@ gap:20px;
 padding:20px;
 }
 
-.product{
+.card{
 background:white;
 padding:10px;
 border-radius:10px;
 text-align:center;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
 }
 
-.product img{
+.card img{
 width:100%;
-border-radius:10px;
-}
-
-a{
-text-decoration:none;
-color:black;
+border-radius:8px;
 }
 
 </style>
@@ -49,57 +47,47 @@ color:black;
 
 <body>
 
-<header>
+<div class="header">
 
-<h1>Eri Silk Shawl</h1>
+Eri Silk Shawl
 
-</header>
+</div>
 
 <div class="products">
 
 <a href="product.html">
 
-<div class="product">
+<div class="card">
 
 <img src="eri1.jpg">
 
 <h3>Eri Shawl 1</h3>
 
-<p>₹2500</p>
-
-<p>Pure Handmade Silk</p>
-
 </div>
 
 </a>
 
+
 <a href="product.html">
 
-<div class="product">
+<div class="card">
 
 <img src="eri2.jpg">
 
 <h3>Eri Shawl 2</h3>
 
-<p>₹2600</p>
-
-<p>Traditional Assamese Silk</p>
-
 </div>
 
 </a>
 
+
 <a href="product.html">
 
-<div class="product">
+<div class="card">
 
 <img src="eri3.jpg">
 
 <h3>Eri Shawl 3</h3>
-
-<p>₹2400</p>
-
-<p>Natural Eri Silk</p>
 
 </div>
 
@@ -108,4 +96,5 @@ color:black;
 </div>
 
 </body>
-  </html>
+
+</html>
