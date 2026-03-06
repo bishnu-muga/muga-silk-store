@@ -1,136 +1,295 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Assam Muga Silk Store</title>
+
+<title>Assam Muga Silk</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
+
 body{
-font-family: Arial;
 margin:0;
-background:#f4f4f4;
+font-family:Arial;
+background:#f8f6f0;
+}
+
+/* HEADER */
+
+header{
+background:#000;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+header img{
+width:160px;
+margin-bottom:10px;
+}
+
+header h1{
+color:#d4af37;
+margin:5px;
+}
+
+header p{
+color:#ccc;
+}
+
+
+/* SECTIONS */
+
+.section{
+padding:60px 20px;
 text-align:center;
 }
 
-header{
-background:#b8860b;
-color:white;
-padding:20px;
+.section h2{
+color:#b8860b;
+margin-bottom:20px;
 }
 
-.section{
-padding:30px;
+
+/* PRODUCTS */
+
+.products{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
 }
 
 .product{
 background:white;
-width:250px;
-display:inline-block;
-margin:20px;
-padding:15px;
+width:260px;
 border-radius:10px;
-box-shadow:0 0 10px gray;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+padding:20px;
 }
 
 .product img{
 width:100%;
-border-radius:10px;
+border-radius:8px;
 }
 
-button{
-background:#25D366;
-color:white;
+.product h3{
+margin-top:10px;
+}
+
+.product button{
+background:#b8860b;
 border:none;
-padding:10px 15px;
+color:white;
+padding:10px 20px;
 border-radius:5px;
 cursor:pointer;
+margin-top:10px;
 }
 
+
+/* GALLERY */
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.gallery img{
+width:260px;
+border-radius:8px;
+}
+
+
+/* WHY SECTION */
+
+.why p{
+font-size:18px;
+margin:10px;
+}
+
+
+/* FOOTER */
+
 footer{
-background:#222;
+background:#000;
 color:white;
 padding:20px;
+text-align:center;
 }
+
+
+/* WHATSAPP BUTTON */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:40px;
+text-decoration:none;
+font-weight:bold;
+}
+
 </style>
 
 </head>
 
+
+
 <body>
 
+
+
 <header>
-<img src="logo.png" width="120">
-<h1>Assam Muga Silk Store</h1>
-<p>Original Handmade Muga Silk Products</p>
+
+<img src="logo.png">
+
+<h1>Assam Muga Silk</h1>
+
+<p>Authentic Handmade Muga Silk from Assam</p>
+
 </header>
 
-<div class="section">
+
+
+<section class="section">
+
+<h2>About Our Brand</h2>
+
+<p>
+We provide authentic handmade Assam Muga Silk products directly from local Assamese weavers.  
+Our mission is to preserve traditional silk culture and deliver premium quality products.
+</p>
+
+</section>
+
+
+
+<section class="section">
+
 <h2>Our Products</h2>
 
+<div class="products">
+
 <div class="product">
-<img src="muga-saree.jpg" width="200">
+
+<img src="eri1.jpg">
+
 <h3>Muga Silk Saree</h3>
-<p>Price: ₹8000</p>
+
+<p>Price ₹8000</p>
+
 <a href="https://wa.me/916001636508">
 <button>Order on WhatsApp</button>
 </a>
+
 </div>
 
+
 <div class="product">
-<img src="gamusa.jpg" width="200">
+
+<img src="eri2.jpg">
+
 <h3>Muga Silk Gamusa</h3>
-<p>Price: ₹1500</p>
+
+<p>Price ₹1500</p>
+
 <a href="https://wa.me/916001636508">
 <button>Order on WhatsApp</button>
 </a>
+
 </div>
 
+
 <div class="product">
-<img  src="muga-saree.jpg">
+
+<img src="eri3.jpg">
+
 <h3>Muga Silk Scarf</h3>
-<p>Price: ₹1200</p>
+
+<p>Price ₹1200</p>
+
 <a href="https://wa.me/916001636508">
 <button>Order on WhatsApp</button>
 </a>
-</div>
+
 </div>
 
-<div class="product">
-<img src="eri1.jpg" width="300">
-<img src="eri2.jpg" width="300">
-<img src="eri3.jpg" width="300">
+</div>
 
-<h3>Eri Silk Shawl</h3>
-<p>Price: ₹2500</p>
-<a href="https://wa.me/916001636508?text=Hello%20I%20want%20to%20order%20Eri%20Silk%20Shawl">
-<button>Order on WhatsApp</button>
+</section>
+
+
+
+<section class="section">
+
+<h2>Product Gallery</h2>
+
+<div class="gallery">
+
+<img src="eri1.jpg">
+<img src="eri2.jpg">
+<img src="eri3.jpg">
+
+</div>
+
+</section>
+
+
+
+<section class="section why">
+
+<h2>Why Choose Us</h2>
+
+<p>✔ 100% Authentic Assam Muga Silk</p>
+
+<p>✔ Handmade by Assamese Weavers</p>
+
+<p>✔ Premium Quality Products</p>
+
+<p>✔ Direct WhatsApp Ordering</p>
+
+</section>
+
+
+
+<section class="section">
+
+<h2>Contact Us</h2>
+
+<p>WhatsApp: +91 6001636508</p>
+
+<p>Email: assammugasilk@gmail.com</p>
+
+</section>
+
+
+
+<a class="whatsapp" href="https://wa.me/916001636508">
+
+WhatsApp
+
 </a>
-</div>
 
 
-
-
-
-<div class="section">
-<h2>About Our Store</h2>
-<p>Hum Assam ka original handmade Muga Silk products bechte hain. 
-Quality aur traditional craftsmanship hamari pehchan hai.</p>
-</div>
-
-<div class="section">
-<h2>Payment Methods</h2>
-<p>UPI | PhonePe | Google Pay | Cash on Delivery</p>
-</div>
 
 <footer>
-<p>Owner: Bishnu Jyoti Das</p>
-<p>Location: Dibrugarh, Assam, India</p>
-<p>WhatsApp: 6001636508</p>
+
+<p>© 2026 Assam Muga Silk</p>
+
 </footer>
 
+
+
 </body>
-</html>
-<a href="https://wa.me/916001636508?text=I%20want%20to%20order%20Muga%20Silk%20Saree">
 
-
+  </html>
 
 
 
