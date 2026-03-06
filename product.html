@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 <title>Product</title>
@@ -8,85 +9,84 @@
 
 body{
 font-family:Arial;
+text-align:center;
+background:#f4f4f4;
 margin:0;
-background:#faf7ef;
 }
 
-.container{
-padding:20px;
+.header{
+background:black;
+color:#d4af37;
+padding:15px;
+font-size:20px;
 }
 
-.main-img{
-width:100%;
+img{
+width:90%;
+max-width:400px;
+margin-top:20px;
 border-radius:10px;
 }
 
-.gallery{
-display:flex;
-gap:10px;
+.price{
+font-size:22px;
 margin-top:10px;
-overflow-x:auto;
-}
-
-.gallery img{
-width:80px;
-cursor:pointer;
-border-radius:5px;
 }
 
 button{
-background:#25D366;
+background:#c7961a;
 color:white;
 border:none;
-padding:15px;
-width:100%;
-border-radius:5px;
+padding:12px 25px;
+font-size:16px;
+border-radius:6px;
 margin-top:20px;
 }
 
 </style>
 
-<script>
-
-function changeImage(img){
-document.getElementById("main").src = img.src;
-}
-
-</script>
-
 </head>
 
 <body>
 
-<div class="container">
+<div class="header">
 
-<h2>Eri Silk Shawl</h2>
-
-<img id="main" src="eri1.jpg" class="main-img">
-
-<div class="gallery">
-
-<img src="eri1.jpg" onclick="changeImage(this)">
-<img src="eri2.jpg" onclick="changeImage(this)">
-<img src="eri3.jpg" onclick="changeImage(this)">
+Eri Silk Shawl
 
 </div>
 
-<h3>Price ₹2500</h3>
+<img src="eri1.jpg">
+
+<div class="price">
+
+₹2500
+
+</div>
 
 <p>
 
-Pure handmade Eri Silk shawl from Assam.
+Pure handmade Eri Silk Shawl from Assam.
 
 </p>
 
 <a href="https://wa.me/916001636508">
 
-<button>Order on WhatsApp</button>
+<button>
+
+Order on WhatsApp
+
+</button>
 
 </a>
 
-</div>
+<br><br>
+
+<a href="eri.html">
+
+⬅ Back
+
+</a>
 
 </body>
-  </html>
+
+</html>
