@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 
 <title>Assam Muga Silk</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
 body{
 margin:0;
 font-family:Arial;
-background:#f4f4f4;
+background:#f5f5f5;
 }
 
 /* HEADER */
 
 .header{
 background:black;
-color:white;
-padding:10px;
-}
-
-.topbar{
+color:#d4af37;
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
+padding:12px;
 }
 
 .logo{
 display:flex;
 align-items:center;
-gap:10px;
-color:#d4af37;
+gap:8px;
 font-weight:bold;
 }
 
 .logo img{
-height:35px;
+height:28px;
 }
 
 .menu{
 font-size:22px;
 cursor:pointer;
+color:white;
 }
 
+/* SEARCH */
+
 .search{
-padding:10px;
 background:#111;
+padding:10px;
 }
 
 .search input{
@@ -92,7 +92,7 @@ background:white;
 border-radius:10px;
 padding:10px;
 text-align:center;
-box-shadow:0 3px 8px rgba(0,0,0,0.1);
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 .card img{
@@ -105,8 +105,9 @@ background:#c7961a;
 color:white;
 border:none;
 padding:8px 20px;
-border-radius:5px;
+border-radius:6px;
 margin-top:10px;
+cursor:pointer;
 }
 
 /* WHATSAPP */
@@ -117,9 +118,9 @@ bottom:20px;
 right:20px;
 background:#25D366;
 color:white;
+font-size:24px;
 padding:12px;
 border-radius:50%;
-font-size:24px;
 text-decoration:none;
 }
 
@@ -130,8 +131,6 @@ text-decoration:none;
 <body>
 
 <div class="header">
-
-<div class="topbar">
 
 <div class="menu" onclick="openMenu()">☰</div>
 
@@ -148,8 +147,6 @@ Assam Muga Silk
 <input type="text" placeholder="Search silk products">
 </div>
 
-</div>
-
 <div id="menu" class="side-menu">
 
 <div onclick="closeMenu()">✕ Close</div>
@@ -161,62 +158,53 @@ Assam Muga Silk
 
 </div>
 
-
 <div class="products">
+
+<div class="card">
+
+<div style="height:200px;background:#eee;border-radius:8px"></div>
+
+<h3>Muga Silk Saree</h3>
+
+<a href="muga.html">
+<button class="view">View</button>
+</a>
+
+</div>
+
+
+<div class="card">
+
+<div style="height:200px;background:#eee;border-radius:8px"></div>
+
+<h3>Muga Silk Gamusa</h3>
+
+<a href="gamusa.html">
+<button class="view">View</button>
+</a>
+
+</div>
+
 
 <div class="card">
 
 <img src="eri1.jpg">
 
-<h3>Muga Silk Saree</h3>
-
-<a href="muga.html">
-
-<button class="view">View</button>
-
-</a>
-
-</div>
-
-
-<div class="card">
-
-<img src="eri2.jpg">
-
-<h3>Muga Silk Gamusa</h3>
-
-<a href="gamusa.html">
-
-<button class="view">View</button>
-
-</a>
-
-</div>
-
-
-<div class="card">
-
-<img src="eri3.jpg">
-
 <h3>Eri Silk Shawl</h3>
 
 <a href="eri.html">
-
 <button class="view">View</button>
-
 </a>
 
 </div>
 
 </div>
-
 
 <a href="https://wa.me/916001636508" class="whatsapp">
 
 💬
 
 </a>
-
 
 <script>
 
@@ -230,7 +218,5 @@ document.getElementById("menu").style.left="-250px";
 
 </script>
 
-
 </body>
-
-  </html>
+</html>
