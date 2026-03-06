@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 <title>Assam Muga Silk</title>
@@ -9,17 +10,77 @@
 body{
 margin:0;
 font-family:Arial;
-background:#faf7ef;
+background:#f4f4f4;
 }
 
-header{
+/* HEADER */
+
+.header{
 background:black;
-color:#d4af37;
-text-align:center;
-padding:30px;
+color:white;
+padding:10px;
 }
 
-.categories{
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+color:#d4af37;
+font-weight:bold;
+}
+
+.logo img{
+height:35px;
+}
+
+.menu{
+font-size:22px;
+cursor:pointer;
+}
+
+.search{
+padding:10px;
+background:#111;
+}
+
+.search input{
+width:100%;
+padding:8px;
+border:none;
+border-radius:5px;
+}
+
+/* SIDE MENU */
+
+.side-menu{
+position:fixed;
+left:-250px;
+top:0;
+width:250px;
+height:100%;
+background:black;
+color:white;
+padding:20px;
+transition:0.3s;
+}
+
+.side-menu a{
+display:block;
+color:white;
+text-decoration:none;
+margin:15px 0;
+font-size:18px;
+}
+
+/* PRODUCTS */
+
+.products{
 display:grid;
 grid-template-columns:repeat(2,1fr);
 gap:20px;
@@ -28,28 +89,37 @@ padding:20px;
 
 .card{
 background:white;
-padding:10px;
 border-radius:10px;
+padding:10px;
 text-align:center;
-box-shadow:0 5px 10px rgba(0,0,0,0.1);
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
 }
 
 .card img{
 width:100%;
-border-radius:10px;
+border-radius:8px;
 }
 
-button{
-background:#b8860b;
+.view{
+background:#c7961a;
 color:white;
 border:none;
-padding:10px;
-width:100%;
+padding:8px 20px;
 border-radius:5px;
 margin-top:10px;
 }
 
-a{
+/* WHATSAPP */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:12px;
+border-radius:50%;
+font-size:24px;
 text-decoration:none;
 }
 
@@ -59,15 +129,40 @@ text-decoration:none;
 
 <body>
 
-<header>
+<div class="header">
 
-<h1>Assam Muga Silk</h1>
+<div class="topbar">
 
-</header>
+<div class="menu" onclick="openMenu()">☰</div>
 
-<div class="categories">
+<div class="logo">
+<img src="logo.png">
+Assam Muga Silk
+</div>
 
-<a href="muga.html">
+<div>🛒</div>
+
+</div>
+
+<div class="search">
+<input type="text" placeholder="Search silk products">
+</div>
+
+</div>
+
+<div id="menu" class="side-menu">
+
+<div onclick="closeMenu()">✕ Close</div>
+
+<a href="index.html">Home</a>
+<a href="muga.html">Muga Saree</a>
+<a href="gamusa.html">Gamusa</a>
+<a href="eri.html">Eri Shawl</a>
+
+</div>
+
+
+<div class="products">
 
 <div class="card">
 
@@ -75,13 +170,14 @@ text-decoration:none;
 
 <h3>Muga Silk Saree</h3>
 
-<button>View</button>
+<a href="muga.html">
 
-</div>
+<button class="view">View</button>
 
 </a>
 
-<a href="gamusa.html">
+</div>
+
 
 <div class="card">
 
@@ -89,13 +185,14 @@ text-decoration:none;
 
 <h3>Muga Silk Gamusa</h3>
 
-<button>View</button>
+<a href="gamusa.html">
 
-</div>
+<button class="view">View</button>
 
 </a>
 
-<a href="eri.html">
+</div>
+
 
 <div class="card">
 
@@ -103,13 +200,37 @@ text-decoration:none;
 
 <h3>Eri Silk Shawl</h3>
 
-<button>View</button>
+<a href="eri.html">
 
-</div>
+<button class="view">View</button>
 
 </a>
 
 </div>
 
+</div>
+
+
+<a href="https://wa.me/916001636508" class="whatsapp">
+
+💬
+
+</a>
+
+
+<script>
+
+function openMenu(){
+document.getElementById("menu").style.left="0";
+}
+
+function closeMenu(){
+document.getElementById("menu").style.left="-250px";
+}
+
+</script>
+
+
 </body>
-</html>
+
+  </html>
